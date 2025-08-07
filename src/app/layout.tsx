@@ -10,17 +10,19 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info";
+
 export const metadata: Metadata = {
   title: "Faik Erkan — İş Analisti, Takım Lideri",
   description:
     "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Faik Erkan — İş Analisti, Takım Lideri",
     description:
       "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
     type: "website",
-    url: "https://example.com",
+    url: siteUrl,
   },
   twitter: {
     card: "summary_large_image",
