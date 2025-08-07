@@ -2,10 +2,24 @@
 
 import { motion } from "framer-motion";
 import ParallaxSection from "@/components/ParallaxSection";
+import JsonLd from "@/components/JsonLd";
 
 export default function Home() {
   return (
     <>
+      <JsonLd
+        json={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Faik Erkan Gürşen",
+          jobTitle: "Çağrı Merkezi Yöneticisi",
+          url: (process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info"),
+          sameAs: [
+            "https://www.linkedin.com/in/faikerkan",
+            "https://github.com/faikerkan",
+          ],
+        }}
+      />
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-5xl">
           <motion.h1

@@ -21,10 +21,20 @@ export default function ContactPage() {
     formState: { errors, isSubmitting },
   } = useForm<ContactForm>({ resolver: zodResolver(contactSchema) });
 
-  const onSubmit = async (_data: ContactForm) => {
-    await new Promise((r) => setTimeout(r, 600));
-    alert("Teşekkürler! Mesajınız alındı.");
-    reset();
+  const onSubmit = async (data: ContactForm) => {
+    try {
+      const FORM_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL || "";
+      if (!FORM_URL) throw new Error("Form endpoint tanımlı değil");
+      await fetch(FORM_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      alert("Teşekkürler! Mesajınız alındı.");
+      reset();
+    } catch (_e) {
+      alert("Şu anda form gönderilemiyor. Lütfen e-posta ile iletin.");
+    }
   };
 
   return (

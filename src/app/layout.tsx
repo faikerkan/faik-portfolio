@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BauhausBg from "@/components/BauhausBg";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -41,9 +43,12 @@ export default function RootLayout({
     <html lang="tr" className="dark">
       <body className={`${inter.variable} antialiased bg-black text-zinc-100`}>
         <BauhausBg />
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-white focus:text-black focus:px-3 focus:py-1">İçeriğe atla</a>
         <Navbar />
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</main>
+        <main id="main" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
