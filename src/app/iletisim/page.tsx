@@ -23,16 +23,20 @@ export default function ContactPage() {
 
   const onSubmit = async (data: ContactForm) => {
     try {
-      const FORM_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL || "";
-      if (!FORM_URL) throw new Error("Form endpoint tanımlı değil");
-      await fetch(FORM_URL, {
+      const FORM_URL =
+        process.env.NEXT_PUBLIC_FORMSPREE_URL || "https://formspree.io/f/xqalglly";
+      const res = await fetch(FORM_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify(data),
       });
+      if (!res.ok) throw new Error("Form gönderimi başarısız");
       alert("Teşekkürler! Mesajınız alındı.");
       reset();
-    } catch (_e) {
+    } catch {
       alert("Şu anda form gönderilemiyor. Lütfen e-posta ile iletin.");
     }
   };
