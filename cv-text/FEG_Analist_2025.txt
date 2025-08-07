@@ -1,0 +1,98 @@
+
+
+FAİK ERKAN GÜRŞEN 
+İzmir, Türkiye | +90 555 210 5197 | faikerkangursen@icloud.com | 
+linkedin.com/in/faikerkan 
+PROFESYONEL ÖZET 
+İş analizi, süreç optimizasyonu ve dijital dönüşüm alanlarında 15 yılı aşkın deneyime 
+sahip, sonuç odaklı bir İş Analistiyim. Agile/Scrum metodolojileriyle yönettiğim 
+projelerde gereksinim analizi, süreç haritalama (BPMN) ve paydaş yönetimi konularında 
+uzmanlaşarak, operasyonel verimliliği %60'a varan oranlarda artırdım. Teknik analiz 
+(SQL, API Testleri) ve proje yönetimi (Jira, Confluence) araçlarındaki yetkinliğimi İş 
+Zekası ve Veri Analitiği yüksek lisans derecemle birleştirerek, iş birimleri ve teknoloji 
+ekipleri arasında stratejik bir köprü kuruyor ve veri odaklı çözümlerle iş hedeflerine 
+ulaşılmasını sağlıyorum. 
+YETKİNLİKLER 
+• İş Analizi: Gereksinim Toplama ve Analizi (Atölye Çalışmaları, Mülakatlar), 
+Fonksiyonel ve Teknik Dokümantasyon (BRD, FRS), Kullanıcı Hikayesi (User 
+Story) Yazımı ve Kabul Kriterleri Belirleme, Use Case Modelleme, Paydaş 
+Yönetimi ve İletişimi, Etki ve Boşluk (GAP) Analizi 
+• Süreç Yönetimi: Mevcut Durum (As-Is) ve Gelecek Durum (To-Be) Analizi, Süreç 
+Haritalama (BPMN), Süreç İyileştirme ve Otomasyon, İş Akışı Optimizasyonu 
+• Proje ve Test Yönetimi: Test Stratejisi ve Planı Oluşturma, Test Senaryosu 
+Geliştirme, Kullanıcı Kabul Testleri (UAT) ve Regresyon Testleri Yönetimi, Test 
+Koordinasyonu ve Raporlama 
+• Metodolojiler: Agile, Scrum, Kanban, Waterfall 
+• Teknik Beceriler: Oracle SQL, PostgreSQL, API Testleri (SOAP/REST), Postman, 
+Temel Python 
+• Araçlar: Jira, Confluence, MS Office Suite (İleri Düzey Excel, Visio), Power BI, 
+Tableau 
+• Uzmanlık Alanları: CRM Tasarımı ve Entegrasyonu, Müşteri Deneyimi (CX) 
+Optimizasyonu, Çağrı Merkezi Süreçleri. Sektör Deneyimi: Enerji (Doğal Gaz), 
+Telekomünikasyon, Teknoloji. 
+İŞ DENEYİMİ 
+İş Analisti Takım Lideri | Su Bilgi Teknolojileri | İzmir, Türkiye 2024 – 2025 
+
+• Jira üzerinden gelen iş taleplerini analiz ederek, iş birimleriyle düzenli atölye 
+çalışmaları ve birebir görüşmelerle gereksinim belirleme toplantıları yönettim; 
+MoSCoW gibi önceliklendirme teknikleri kullanarak taleplerin iş değerine göre 
+sıralanmasını sağladım. 
+• Paydaşlardan topladığım ham verileri, geliştirme ekibinin net bir şekilde 
+anlayabileceği teknik ve fonksiyonel dokümanlara (BRD, FRS), kullanıcı 
+hikayelerine (User Stories) ve kabul kriterlerine dönüştürerek projenin kapsamını 
+netleştirdim. 
+• Geliştirme sonrası, Oracle SQL sorguları ile veritabanı düzeyinde veri 
+doğruluğunu ve tutarlılığını teyit ettim; Postman aracılığıyla SOAP/REST API 
+entegrasyonlarının fonksiyonel testlerini planlayıp koordine ederek sistemler 
+arası uyumu güvence altına aldım. 
+Çağrı Merkezi Şefi & Proje Yöneticisi | İzmir Doğalgaz Dağıtım A.Ş. | İzmir, Türkiye 2020 
+– 2024 
+• Carbon CRM Projesi: Müşteri hizmetleri süreçlerini dijitalleştirmek amacıyla 
+geliştirilen kurum içi CRM uygulamasında, projenin başlangıcından canlıya 
+alınmasına kadar hem proje yöneticisi hem de iş analisti olarak çift rol 
+üstlendim. Mevcut iş akışlarını BPMN ile haritalandırarak ve kullanıcı personaları 
+oluşturarak %30 daha verimli yeni süreçler tasarladım. Bu sayede, müşteri 
+şikayetlerinin çözüm süresi kısaldı ve veri raporlama kalitesi arttı. 
+• Akıllı 187 Projesi: Acil durum çağrılarının verimliliğini artırmayı hedefleyen 
+makine öğrenmesi tabanlı sınıflandırma projesinde, iş birimlerinin beklentilerini 
+teknik gereksinimlere çevirdim. Algoritmanın eğitilmesi için gerekli iş kurallarını 
+ve veri setlerini tanımlayarak, projenin analitik modelleme ve uygulama 
+aşamalarını başarıyla tamamlamasına öncülük ettim. 
+• Şirketin temel operasyonlarını etkileyen EPDK regülasyonlarına tam uyumluluk 
+sağlayacak şekilde süreçleri yeniden tasarladım. Bu kapsamlı iyileştirme 
+sayesinde, manuel işlemleri otomatize ederek ve darboğazları ortadan kaldırarak 
+operasyonel verimlilikte bir yıl içinde %60'lık bir artış elde edilmesini sağladım. 
+Eğitim ve Kalite Yöneticisi | Alonet Bilgi Teknolojileri – Arçelik Operasyonu | İzmir, 
+Türkiye 2017 – 2020 
+• İş hedefleri ve KPI'ları analiz ederek eğitim ihtiyaçlarını belirledim ve bu 
+doğrultuda, temsilci performansını doğrudan etkileyen oyunlaştırma tabanlı 
+("Kingdoms of Arçelik") eğitim projeleri tasarladım ve uyguladım. 
+• Kalite denetim süreçlerini ve performans değerlendirme metriklerini, müşteri 
+memnuniyeti ve operasyonel verimlilik hedeflerine hizmet edecek şekilde 
+yeniden yapılandırdım. 
+
+PROJELER 
+• Makine Öğrenmesi ile 187 Acil Çağrı Analizi: Acil ihbarların ses kayıtlarından 
+metne dönüştürülerek, doğal dil işleme (NLP) teknikleriyle 'acil' ve 'acil olmayan' 
+şeklinde sınıflandırılmasını sağlayan bir model geliştirildi. Bu proje ile kritik 
+vakalara müdahale süresi kısaltılırken, temsilci yönlendirmelerinin doğruluğu ve 
+hizmet kalitesi de otomatik olarak ölçümlendi. 
+• Kurumsal Bilgi Bankası: Şirket içi bilgi silolarını ortadan kaldırmak ve tüm 
+çalışanların güncel ve standart bilgiye anında erişimini sağlamak amacıyla, 
+yapay zeka destekli bir arama motoru ve karmaşık mevzuat sorgularını 
+yanıtlayabilen bir sohbet botu içeren merkezi bir bilgi yönetim sistemi tasarlandı 
+ve hayata geçirildi. Proje sonucunda, yeni personelin işe adaptasyon süresi %40 
+oranında kısaldı ve müşteri temsilcisi kaynaklı operasyonel hatalarda %25'lik bir 
+azalma sağlandı. 
+EĞİTİM 
+• Yüksek Lisans, İş Zekâsı ve Veri Analitiği | Bakırçay Üniversitesi | 2024 
+o Tez: Makine Öğrenimi ile Doğal Gaz 187 Acil İhbar Çağrılarının 
+Değerlendirilmesi 
+• Lisans, İktisat | Anadolu Üniversitesi | 2015 
+• Ön Lisans, Halkla İlişkiler ve Tanıtım | Anadolu Üniversitesi | 2010 
+SERTİFİKALAR 
+• Uluslararası İş Analizi Metodolojisi ve Teknikleri | BTK Akademi | 2023 
+• Miuul Data Scientist Bootcamp (Python, ML, CRM Analytics, SQL) | Miuul | 2023 
+• Google Digital Garage - Dijital Pazarlamanın Temelleri | Google | 2021 
+• Usta Öğreticilik Belgesi | MEB | 2022 
+ 
