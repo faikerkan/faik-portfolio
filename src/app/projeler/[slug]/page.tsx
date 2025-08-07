@@ -23,7 +23,7 @@ export default function ProjectPage({ params }: any) {
   if (!project) return notFound();
   return (
     <section className="py-16 md:py-24 mx-auto max-w-3xl">
-      <ProjectCover variant={project.coverVariant} />
+      <ProjectCover variant={project.coverVariant} src={`/projects/${project.slug}.svg`} alt={`${project.title} kapak görseli`} />
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
         {project.title}
       </h1>

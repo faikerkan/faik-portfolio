@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 type Project = {
+  slug: string;
   title: string;
   description: string;
   tools: string[];
@@ -15,6 +16,7 @@ type Project = {
 };
 
 const projects: (Project & { coverVariant?: ProjectContent["coverVariant"]; metrics?: ProjectContent["metrics"] })[] = data.map((p) => ({
+  slug: p.slug,
   title: p.title,
   description: p.description,
   tools: p.tools,
@@ -36,7 +38,7 @@ export default function ProjectsPage() {
               key={p.title}
               className="rounded-2xl border border-white/10 p-6 bg-white/5 transition-transform duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
             >
-              <ProjectCover variant={p.coverVariant} />
+              <ProjectCover variant={p.coverVariant} src={`/projects/${p.slug}.svg`} alt={`${p.title} kapak görseli`} />
               <h3 className="text-xl font-medium">{p.title}</h3>
               <p className="mt-2 text-zinc-300">{p.description}</p>
               {p.metrics && (

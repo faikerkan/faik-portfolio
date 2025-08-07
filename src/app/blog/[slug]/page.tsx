@@ -27,8 +27,32 @@ export default function BlogPostPage({ params }: any) {
         {post.title}
       </h1>
       <p className="mt-4 text-zinc-300">{post.excerpt}</p>
-      <div className="prose prose-invert mt-8 max-w-none whitespace-pre-line">
-        {post.content}
+      <div className="prose prose-invert mt-8 max-w-none">
+        {post.slug === "gereksinimden-kabul-kriterlerine" ? (
+          <>
+            <h2>Gereksinim Toplama: Saha, Atölye, Veri</h2>
+            <p>
+              Çağrı merkezi özelinde gereksinim, temsilci ve müşteri temasından
+              beslenir. Saha gözlemi ve birebir görüşmeler, ilk temas çözümünü
+              etkileyen sorunları görünür kılar. Atölyelerde paydaşları bir araya
+              getirerek ortak dil oluştururum.
+            </p>
+            <h2>Kabul Kriterleri: KPI’larla Bağlama</h2>
+            <p>
+              Given/When/Then formatını kullanarak kabul kriterlerini FCR, AHT,
+              CSAT gibi göstergelere bağlarım. Bu sayede test edilebilir, belirsizliği
+              düşük ve sonuç odaklı tanımlar elde edilir.
+            </p>
+            <h2>UAT ve Devreye Alma</h2>
+            <p>
+              UAT senaryolarını temsilci akışlarına göre yazar, üretim öncesi gerçek
+              vaka simülasyonlarıyla doğrularım. Devreye alma sonrası metrikleri
+              izleyerek geri bildirim döngüsünü kapatırım.
+            </p>
+          </>
+        ) : (
+          <p className="whitespace-pre-line">{post.content}</p>
+        )}
       </div>
     </article>
   );
