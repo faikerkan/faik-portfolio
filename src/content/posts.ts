@@ -10,33 +10,33 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: "gereksinimden-kabul-kriterlerine",
-    title: "Gereksinim Toplamadan Kabul Kriterlerine",
-    tag: "İş Analizi",
+    title: "Çağrı Merkezinde Gereksinimden Kabul Kriterlerine",
+    tag: "Çağrı Merkezi",
     date: "2025-01-15",
     excerpt:
-      "Atölye çalışmaları ve mülakatlarla etkili gereksinim toplama; INVEST ve SMART ile ölçülebilir kabul kriterleri yazma yaklaşımı.",
+      "Atölye ve saha gözlemiyle gereksinimleri toplarken, kabul kriterlerini FCR, AHT ve CSAT gibi KPI’lara bağlamak.",
     content:
-      "Gereksinim toplama, doğru soruları doğru anda sorma sanatıyla başlar. Atölye ve birebir görüşmelerde, paydaş beklentilerini netleştirirken\n'neden' sorusunu merkeze koyarım. Elde edilen ham veriyi kullanıcı hikayelerine (As a / I want / So that) dönüştürür, INVEST ile incelerim. Kabul kriterleri için Given/When/Then formatını kullanmak; test edilebilir ve anlaşılır tanımlar üretmemi sağlar. Bu pratik, UAT aşamasında belirsizliği azaltır ve teslimat kalitesini yükseltir.",
+      "Gereksinim toplama, çağrı merkezi özelinde saha gözlemi ve temsilci görüşmeleriyle güçlenir. ‘Neden’ sorusu, gerçek ihtiyacı ortaya çıkarır. Kabul kriterlerini Given/When/Then formatında yazarken FCR, AHT ve CSAT gibi KPI’larla ilişkilendirmek; ölçülebilirlik sağlar ve UAT’te belirsizliği azaltır.",
   },
   {
     slug: "bpmn-ile-surec-tasarimi",
-    title: "BPMN ile Süreç Tasarımında Pratik İpuçları",
-    tag: "Süreç Yönetimi",
+    title: "BPMN ile Çağrı Akışlarını Tasarlamak",
+    tag: "Çağrı Merkezi",
     date: "2025-01-22",
     excerpt:
-      "As-Is ve To-Be modellemesinde sık yapılan hatalar ve operasyonel verimliliği artıran desenler.",
+      "As-Is çağrı akışlarını gerçek verilerle çıkarmak ve To-Be’de darboğazları kaldıran desenler.",
     content:
-      "BPMN, tüm paydaşların aynı dili konuşmasını sağlar. As-Is akışında gerçeği yansıtmak kritik önemdedir; varsayımlardan kaçınırım. To-Be tasarımında darboğazları kaldırmak, bekleme ve geri dönüş döngülerini azaltmak için paralel akışlardan ve olay-temelli geçitlerden faydalanırım. Ölçülebilir KPI seti (SLA, ilk temas çözümü vb.) olmadan tasarım tamamlanmış sayılmaz.",
+      "BPMN, temsilci deneyimini görünür kılar. As-Is akışında varsayım yerine veri kullanmak gerekir. To-Be aşamasında bekleme ve geri dönüş döngülerini azaltmak için doğru geçit tiplerini kullanmak; AHT ve FCR’a doğrudan etki eder. Ölçülebilir KPI seti olmadan tasarım tamamlanmış sayılmaz.",
   },
   {
     slug: "oyunlastirma-ile-kpi-arttirma",
-    title: "Çağrı Merkezi KPI’larını Oyunlaştırma ile Yükseltmek",
-    tag: "Liderlik",
+    title: "Oyunlaştırma ile KPI’ları Yükseltmek",
+    tag: "Eğitim & Kalite",
     date: "2025-02-01",
     excerpt:
-      "Kingdoms of Arçelik projesinden öğrenimler: motivasyon, metrikler ve sürdürülebilir gelişim.",
+      "Kingdoms of Arçelik deneyimi: motivasyon kurgusu, doğru metrikler ve sürdürülebilir gelişim.",
     content:
-      "Oyunlaştırma, doğru kurgulandığında davranış değişimini kalıcı hale getirir. KPI’ları (AHT, satış, müşteri memnuniyeti) avatar yetenekleri ve seviye sistemiyle ilişkilendirmek; temsilcilerin içsel motivasyonunu tetikler. Önemli olan rekabeti sağlıklı tutmak, bireysel gelişim yol haritalarıyla desteklemek ve geri bildirim kültürünü şeffaf kılmaktır.",
+      "Oyunlaştırma, doğru metriklerle desteklendiğinde davranış değişimini kalıcı kılar. AHT, satış ve CSAT gibi göstergeleri avatar/seviye sistemiyle ilişkilendirmek; içsel motivasyonu artırır. Rekabet sağlıklı tutulmalı; bireysel gelişim planları ve şeffaf geri bildirim kültürüyle desteklenmelidir.",
   },
 ];
 

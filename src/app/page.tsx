@@ -22,7 +22,8 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 text-lg md:text-xl text-zinc-300 max-w-2xl"
           >
-            İş analizi, teknoloji ve motosiklet tutkusu bir arada.
+            Çağrı merkezi yönetimi, müşteri deneyimi ve CRM dönüşümüyle ölçülebilir
+            sonuçlar üretiyorum.
           </motion.p>
 
           <motion.div
@@ -33,19 +34,19 @@ export default function Home() {
           >
             {[
               {
-                title: "İş Analizi",
+                title: "Çağrı Merkezi Yönetimi",
                 desc:
-                  "Gereksinim toplama, BPMN ile süreç modelleme, UAT ve kabul kriterleri.",
+                  "AHT, FCR, SLA ve ulaşılabilirlik gibi KPI’larda sürekli iyileştirme.",
               },
               {
-                title: "Süreç İyileştirme",
+                title: "Müşteri Deneyimi & CRM",
                 desc:
-                  "Operasyonel verimliliği ölçer, darboğazları kaldırır ve otomasyon kurgularım.",
+                  "Carbon CRM, akış tasarımları ve doğru bilgiyle ilk temasta çözüm.",
               },
               {
-                title: "Takım Liderliği",
+                title: "Eğitim & Kalite",
                 desc:
-                  "Şeffaf iletişim, geri bildirim kültürü ve ölçülebilir hedeflerle ekipleri büyütürüm.",
+                  "Oyunlaştırma ve kalite denetimleriyle sürdürülebilir performans artışı.",
               },
             ].map((item) => (
               <div

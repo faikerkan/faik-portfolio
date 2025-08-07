@@ -15,35 +15,35 @@ export const projects: Project[] = [
     slug: "akilli-187",
     title: "Akıllı 187 — Acil Çağrı Analizi",
     description:
-      "Acil ihbar ses kayıtlarının metne dönüştürülmesi ve NLP ile 'acil' / 'acil değil' sınıflandırması. Müdahale süresi kısaldı, yönlendirme doğruluğu arttı.",
+      "187 Acil ihbarlarının metne dönüştürülmesi ve NLP ile aciliyet sınıflandırması. Müdahale süresi kısaldı, yönlendirme doğruluğu yükseldi.",
     tools: ["NLP", "ML", "Python", "SQL"],
     impact:
       "Kritik çağrılara müdahale süresinde iyileşme; kalite ölçümlemesi otomatik hale geldi.",
     coverVariant: "a",
     metrics: [
-      { name: "Müdahale Süresi", value: "Düşüş" },
-      { name: "Yönlendirme Doğruluğu", value: "Artış" },
+      { name: "Müdahale Süresi", value: "Azalış (hedef: -%20)" },
+      { name: "Yönlendirme Doğruluğu", value: "Artış (hedef: +%15)" },
     ],
   },
   {
     slug: "carbon-crm",
     title: "Carbon CRM — Müşteri Hizmetleri Dönüşümü",
     description:
-      "BPMN ile süreç haritalama, kullanıcı personaları ve yeni CRM akışlarının tasarımı. Şikayet çözüm süresi ve raporlama kalitesi iyileşti.",
+      "BPMN ile süreç haritalama, temsilci akışları ve doğrulama adımlarıyla ilk temasta çözüm oranında artış.",
     tools: ["BPMN", "Jira", "Confluence"],
     impact:
-      "%30 verimlilik artışı; raporlamada doğruluk ve görünürlük yükseldi.",
+      "%30 verimlilik artışı; doğru bilgi ve akışla CSAT ve FCR gelişimi.",
     coverVariant: "b",
     metrics: [
       { name: "Operasyonel Verimlilik", value: "+%30" },
-      { name: "Şikayet Çözüm Süresi", value: "Düşüş" },
+      { name: "İlk Temasta Çözüm (FCR)", value: "Artış" },
     ],
   },
   {
     slug: "kurumsal-bilgi-bankasi",
     title: "Kurumsal Bilgi Bankası",
     description:
-      "Yapay zeka destekli arama ve mevzuat ile sohbet özelliği olan merkezi bilgi yönetim sistemi. İşe adaptasyon %40 hızlandı; hata oranları %25 azaldı.",
+      "Yapay zeka destekli arama ve mevzuat ile sohbet. İşe adaptasyon hızlandı; bilgi birliği sağlandı.",
     tools: ["Search", "Chatbot", "Knowledge Base"],
     coverVariant: "c",
     metrics: [
