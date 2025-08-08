@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
@@ -21,7 +21,7 @@ export default function CreatePostPage() {
     },
   });
 
-  const canUpload = useMemo(() => !!process.env.NEXT_PUBLIC_ENABLE_UPLOAD_UI || !!process.env.BLOB_READ_WRITE_TOKEN, []);
+  const canUpload = true;
 
   const onImageUpload = async (file: File) => {
     const form = new FormData();
@@ -45,8 +45,14 @@ export default function CreatePostPage() {
         html: editor?.getHTML() ?? "",
         date: new Date().toISOString(),
       };
-      console.log("Post (demo)", payload);
-      alert("Taslak kaydedildi (demo). Kalıcı kayıt için backend ekleyelim.");
+      const res = await fetch("/api/posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error || "Kaydedilemedi");
+      alert("Yazı kaydedildi");
     } finally {
       setSaving(false);
     }
@@ -73,15 +79,45 @@ export default function CreatePostPage() {
             <div className="mb-2 flex items-center justify-between">
               <span className="text-sm text-zinc-400">İçerik</span>
               {canUpload && (
-                <label className="text-sm underline cursor-pointer">
-                  Görsel ekle
-                  <input
-                    type="file"
-                    accept="image/*"
-                    className="hidden"
-                    onChange={(e) => e.target.files && onImageUpload(e.target.files[0])}
-                  />
-                </label>
+                <div className="flex items-center gap-3">
+                  <label className="text-sm underline cursor-pointer">
+                    Görsel ekle
+                    <input
+                      type="file"
+                      accept="image/*"
+                      className="hidden"
+                      onChange={(e) => e.target.files && onImageUpload(e.target.files[0])}
+                    />
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => editor?.chain().focus().toggleBold().run()}
+                    className="text-xs px-2 py-1 rounded-md border border-white/10 hover:bg-white/5"
+                  >
+                    Bold
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => editor?.chain().focus().toggleItalic().run()}
+                    className="text-xs px-2 py-1 rounded-md border border-white/10 hover:bg-white/5"
+                  >
+                    Italic
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => editor?.chain().focus().setParagraph().run()}
+                    className="text-xs px-2 py-1 rounded-md border border-white/10 hover:bg-white/5"
+                  >
+                    P
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()}
+                    className="text-xs px-2 py-1 rounded-md border border-white/10 hover:bg-white/5"
+                  >
+                    H2
+                  </button>
+                </div>
               )}
             </div>
             <EditorContent editor={editor} />

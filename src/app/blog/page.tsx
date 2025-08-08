@@ -9,7 +9,12 @@ export const metadata: Metadata = {
 
 export const revalidate = 60;
 
+type DynamicPost = { title: string; tag?: string; slug: string };
+
 export default async function BlogPage() {
+  const blobRes = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || ""}/api/posts`, { cache: "no-store" }).catch(() => null);
+  const blobJson = (await blobRes?.json().catch(() => null)) as { items?: DynamicPost[] } | null;
+  const dynamicPosts: DynamicPost[] = (blobJson?.items || []).map((p) => ({ title: p.title, tag: p.tag, slug: p.slug }));
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto max-w-6xl">
@@ -29,6 +34,20 @@ export default async function BlogPage() {
             </article>
           ))}
         </div>
+
+        {dynamicPosts.length > 0 && (
+          <>
+            <h2 className="mt-12 text-xl font-medium">Yeni Yazılar (Site)</h2>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {dynamicPosts.map((dp) => (
+                <article key={dp.slug} className="rounded-2xl border border-white/10 p-6 bg-white/5">
+                  <span className="text-xs text-zinc-400">{dp.tag || "Yazı"}</span>
+                  <h3 className="mt-2 text-lg font-medium">{dp.title}</h3>
+                </article>
+              ))}
+            </div>
+          </>
+        )}
 
         <h2 className="mt-12 text-xl font-medium">Diğer Yazılar (Medium)</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
