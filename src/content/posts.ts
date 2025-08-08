@@ -40,4 +40,53 @@ export const posts: Post[] = [
   },
 ];
 
+export type ExternalPost = {
+  title: string;
+  tag: string;
+  url: string;
+};
+
+export const externalPosts: ExternalPost[] = [
+  {
+    title: "Çağrı Merkezi Datası ile RFM’i Ters Yüz Etmek",
+    tag: "Çağrı Merkezi",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-datas%C4%B1-ile-rfmi-ters-y%C3%BCz-etmek-8cf908397ec8",
+  },
+  {
+    title: "1-837-837: Bir Leblebinin Algoritması",
+    tag: "Analiz",
+    url: "https://medium.com/@faikerkan/1-837-837-bir-leblebinin-algoritmas%C4%B1-0091d247338e",
+  },
+  {
+    title: "Çağrı Merkezi Sektöründe Odadaki Fil",
+    tag: "Çağrı Merkezi",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-sekt%C3%B6r%C3%BCnde-odadaki-fil-b4ee3a5c69cd",
+  },
+  {
+    title: "Beklenmedik İttifak: Veri Bilimi ve Çağrı Merkezi",
+    tag: "Veri Bilimi",
+    url: "https://medium.com/@faikerkan/beklenmedik-i%CC%87ttifak-veri-bilimi-ve-%C3%A7a%C4%9Fr%C4%B1-merkezi-7a1a81ac71fc",
+  },
+  {
+    title: "Çağrı Merkezi Kaymağı: Outbound",
+    tag: "Çağrı Merkezi",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-kayma%C4%9F%C4%B1-outbound-2d9b845c7a54",
+  },
+  {
+    title: "Çağrı Merkezi: Eğitimcinin Eğitimi",
+    tag: "Eğitim & Kalite",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-e%C4%9Fitimcinin-e%C4%9Fitim-7794942e7e5",
+  },
+  {
+    title: "Çağrı Merkezi Bel Kemiği: Inbound",
+    tag: "Çağrı Merkezi",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-bel-kemi%C4%9Fi-inbound-935962ccae93",
+  },
+  {
+    title: "Çağrı Merkezi Nedir, Ne Değildir?",
+    tag: "Çağrı Merkezi",
+    url: "https://medium.com/@faikerkan/%C3%A7a%C4%9Fr%C4%B1-merkezi-nedir-ne-de%C4%9Fildir-97c6e92c1b1f",
+  },
+];
+
 
