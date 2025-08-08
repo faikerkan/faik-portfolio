@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { projects } from "@/content/projects";
 import ProjectCover from "@/components/ProjectCover";
+import JsonLd from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -23,6 +24,14 @@ export default function ProjectPage({ params }: any) {
   if (!project) return notFound();
   return (
     <section className="py-16 md:py-24 mx-auto max-w-3xl">
+      <JsonLd
+        json={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: project.title,
+          description: project.description,
+        }}
+      />
       <ProjectCover variant={project.coverVariant} src={`/projects/${project.slug}.svg`} alt={`${project.title} kapak görseli`} />
       <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
         {project.title}

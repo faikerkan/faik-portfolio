@@ -2,6 +2,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { posts } from "@/content/posts";
+import JsonLd from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -22,6 +23,19 @@ export default function BlogPostPage({ params }: any) {
   if (!post) return notFound();
   return (
     <article className="py-16 md:py-24 mx-auto max-w-3xl">
+      <JsonLd
+        json={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          datePublished: post.date,
+          author: {
+            "@type": "Person",
+            name: "Faik Erkan Gürşen",
+            url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.faikerkan.info") + "/hakkimda",
+          },
+        }}
+      />
       <p className="text-xs text-zinc-400">{post.tag} • {post.date}</p>
       <h1 className="mt-2 text-3xl md:text-4xl font-semibold tracking-tight">
         {post.title}
