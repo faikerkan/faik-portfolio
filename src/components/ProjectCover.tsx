@@ -4,14 +4,16 @@ type Props = { variant?: "a" | "b" | "c"; src?: string; alt?: string };
 
 export default function ProjectCover({ variant = "a", src, alt }: Props) {
   return (
-    <div className="h-44 w-full rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-b from-zinc-900 to-black mb-4">
+    <div className="relative h-44 w-full rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-b from-zinc-900 to-black mb-4">
       {src ? (
-        src.endsWith(".svg") ? (
-          // Use native img for SVG for best fidelity
-          <img src={src} alt={alt || "Project cover"} className="h-full w-full object-cover" />
-        ) : (
-          <Image src={src} alt={alt || "Project cover"} width={1200} height={528} className="h-full w-full object-cover" />
-        )
+        <Image
+          src={src}
+          alt={alt || "Project cover"}
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
+          className="object-cover"
+          priority={false}
+        />
       ) : (
       <svg viewBox="0 0 400 176" className="h-full w-full opacity-90">
         {variant === "a" && (

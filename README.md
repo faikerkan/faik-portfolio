@@ -49,3 +49,15 @@ NEXT_PUBLIC_SITE_URL=https://<senin-domainin>
 ```
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
+
+## Canonical domain
+
+- Canonical domain: `www.faikerkan.info`
+- Redirect: `faikerkan.info` → `https://www.faikerkan.info/:path*` (Next.js `redirects()`)
+- Vercel: Domains → `www.faikerkan.info` Primary, `faikerkan.info` Redirect to Primary
+
+Kontrol:
+
+```bash
+npm run check:redirects
+```

@@ -14,6 +14,7 @@ export default function BauhausBg() {
       <motion.div
         initial={{ rotate: 0 }}
         animate={{ rotate: 360 }}
+        style={{ willChange: "transform" }}
         transition={{ repeat: Infinity, duration: 120, ease: "linear" }}
         className="absolute right-[-120px] bottom-[-120px] h-[420px] w-[420px]"
       >

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -34,6 +34,15 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#000000" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,7 +50,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="dark">
-      <body className={`${inter.variable} antialiased bg-black text-zinc-100`}>
+      <body className={`${inter.variable} antialiased bg-black text-zinc-100 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]`}>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <BauhausBg />
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-white focus:text-black focus:px-3 focus:py-1">İçeriğe atla</a>
         <Navbar />

@@ -21,11 +21,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-black/30 border-b border-white/10">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 lg:px-8 h-14 sm:h-16 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold tracking-tight">
           Faik Erkan
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-4 lg:gap-6">
           {NAV_ITEMS.map((item) => {
             const active = pathname === item.href;
             return (
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <button
           aria-label="Menüyü aç"
-          className="md:hidden inline-flex items-center justify-center rounded-md p-2.5 hover:bg-white/5"
+          className="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-white/5"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -60,7 +60,7 @@ export default function Navbar() {
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden border-t border-white/10"
           >
-            <ul className="px-4 py-4 space-y-2">
+            <ul className="px-3 py-3 space-y-1.5">
               {NAV_ITEMS.map((item) => {
                 const active = pathname === item.href;
                 return (

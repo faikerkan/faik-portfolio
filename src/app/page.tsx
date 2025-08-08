@@ -20,8 +20,8 @@ export default function Home() {
           ],
         }}
       />
-      <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-5xl">
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-5xl px-2 sm:px-0">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="mt-8 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3"
           >
             {[
               {
@@ -65,7 +65,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-2xl border border-white/10 p-6 bg-white/5"
+                className="rounded-2xl border border-white/10 p-5 sm:p-6 bg-white/5"
               >
                 <h3 className="text-xl font-medium">{item.title}</h3>
                 <p className="mt-2 text-zinc-300">{item.desc}</p>

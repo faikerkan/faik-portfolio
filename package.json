@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "check:redirects": "node scripts/check-redirects.cjs",
     "extract:cv": "tsx scripts/extract-cv.ts"
   },
   "dependencies": {
