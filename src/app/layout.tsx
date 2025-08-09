@@ -6,19 +6,21 @@ import Footer from "@/components/Footer";
 import BauhausBg from "@/components/BauhausBg";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.faikerkan.info";
 
 export const metadata: Metadata = {
   title: "Faik Erkan — İş Analisti, Takım Lideri",
   description:
     "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
   metadataBase: new URL(siteUrl),
+  alternates: { canonical: siteUrl },
   openGraph: {
     title: "Faik Erkan — İş Analisti, Takım Lideri",
     description:
@@ -57,6 +59,23 @@ export default function RootLayout({
         <Navbar />
         <main id="main" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</main>
         <Footer />
+        <JsonLd
+          json={{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Faik Erkan",
+            url: siteUrl,
+            jobTitle: "İş Analisti, Takım Lideri",
+          }}
+        />
+        <JsonLd
+          json={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Faik Erkan",
+            url: siteUrl,
+          }}
+        />
         <Analytics />
         <SpeedInsights />
       </body>

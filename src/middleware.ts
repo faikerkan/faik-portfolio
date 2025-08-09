@@ -43,7 +43,11 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/yazi-olustur", "/api/upload"],
+  matcher: [
+    "/yazi-olustur",
+    "/api/upload/:path*",
+    "/api/posts/:path*",
+  ],
 };
 
 
