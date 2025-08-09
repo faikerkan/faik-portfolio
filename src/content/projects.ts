@@ -12,43 +12,51 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "akilli-187",
-    title: "Akıllı 187 — Acil Çağrı Analizi",
+    slug: "187-acil-ml",
+    title: "187 Acil Çağrı Makine Öğrenmesi Projesi",
     description:
-      "187 Acil ihbarlarının metne dönüştürülmesi ve NLP ile aciliyet sınıflandırması. Müdahale süresi kısaldı, yönlendirme doğruluğu yükseldi.",
+      "187 Acil ihbarlarının metne dönüştürülmesi ve ML/NLP ile aciliyet sınıflandırması. Müdahale süresi kısaldı, yönlendirme doğruluğu yükseldi.",
     tools: ["NLP", "ML", "Python", "SQL"],
-    impact:
-      "Kritik çağrılara müdahale süresinde iyileşme; kalite ölçümlemesi otomatik hale geldi.",
     coverVariant: "a",
     metrics: [
-      { name: "Müdahale Süresi", value: "Azalış (hedef: -%20)" },
-      { name: "Yönlendirme Doğruluğu", value: "Artış (hedef: +%15)" },
+      { name: "Operasyonel Verimlilik (6 ay)", value: "+%20" },
+      { name: "Toplam İyileşme (1 yıl)", value: "+%60" },
     ],
   },
   {
     slug: "carbon-crm",
-    title: "Carbon CRM — Müşteri Hizmetleri Dönüşümü",
+    title: "Carbon CRM",
     description:
-      "BPMN ile süreç haritalama, temsilci akışları ve doğrulama adımlarıyla ilk temasta çözüm oranında artış.",
+      "BPMN ile süreç haritalama, temsilci akışları ve doğrulama adımlarıyla çağrı çözümünde hız ve doğruluk.",
     tools: ["BPMN", "Jira", "Confluence"],
-    impact:
-      "%30 verimlilik artışı; doğru bilgi ve akışla CSAT ve FCR gelişimi.",
     coverVariant: "b",
     metrics: [
-      { name: "Operasyonel Verimlilik", value: "+%30" },
-      { name: "İlk Temasta Çözüm (FCR)", value: "Artış" },
+      { name: "Çağrı Çözüm Süresi", value: "-%35" },
+      { name: "Şikâyet Yönlendirme Doğruluğu", value: "+%40" },
     ],
   },
   {
-    slug: "kurumsal-bilgi-bankasi",
-    title: "Kurumsal Bilgi Bankası",
+    slug: "bilgi-bankasi",
+    title: "Bilgi Bankası",
     description:
-      "Yapay zeka destekli arama ve mevzuat ile sohbet. İşe adaptasyon hızlandı; bilgi birliği sağlandı.",
+      "Yapay zekâ destekli arama ve mevzuat ile sohbet. İşe adaptasyon hızlanırken bilgi birliği sağlandı.",
     tools: ["Search", "Chatbot", "Knowledge Base"],
     coverVariant: "c",
     metrics: [
-      { name: "İşe Adaptasyon Süresi", value: "-%40" },
-      { name: "Operasyonel Hata Oranı", value: "-%25" },
+      { name: "Bilgiye Erişim Süresi", value: "-%50" },
+      { name: "Personel Yetkinliği", value: "Artış" },
+    ],
+  },
+  {
+    slug: "kingdoms-of-arcelik",
+    title: "Kingdoms of Arçelik (Oyunlaştırma)",
+    description:
+      "KPI odaklı oyunlaştırma kurgusu ile temsilci motivasyonunu ve hedef tutturmayı artıran program.",
+    tools: ["Gamification", "KPI"],
+    coverVariant: "b",
+    metrics: [
+      { name: "KPI Hedef Tutturma", value: "+%25" },
+      { name: "Temsilci Motivasyonu", value: "Artış" },
     ],
   },
 ];

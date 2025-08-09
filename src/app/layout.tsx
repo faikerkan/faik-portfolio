@@ -15,22 +15,33 @@ const inter = Inter({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info";
 
 export const metadata: Metadata = {
-  title: "Faik Erkan — İş Analisti, Takım Lideri",
+  title: "Faik Erkan Gürşen | Çağrı Merkezi & CX Lideri • Veri ve AI Uzmanı",
   description:
-    "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
+    "15 yıllık çağrı merkezi ve müşteri deneyimi liderliği tecrübemle, veri analitiği ve yapay zekâ çözümleriyle operasyonel verimlilik ve kârlılık sağlıyorum.",
   metadataBase: new URL(siteUrl),
   openGraph: {
-    title: "Faik Erkan — İş Analisti, Takım Lideri",
+    title: "Faik Erkan Gürşen | Çağrı Merkezi & CX Lideri • Veri ve AI Uzmanı",
     description:
-      "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
+      "15 yıllık çağrı merkezi ve müşteri deneyimi liderliği tecrübemle, veri analitiği ve yapay zekâ çözümleriyle operasyonel verimlilik ve kârlılık sağlıyorum.",
     type: "website",
     url: siteUrl,
+    siteName: "Faik Erkan Gürşen",
+    locale: "tr_TR",
+    images: [
+      {
+        url: "/og",
+        width: 1200,
+        height: 630,
+        alt: "Faik Erkan Gürşen — Çağrı Merkezi & CX Lideri • Veri ve AI Uzmanı",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faik Erkan — İş Analisti, Takım Lideri",
+    title: "Faik Erkan Gürşen | Çağrı Merkezi & CX Lideri • Veri ve AI Uzmanı",
     description:
-      "Faik Erkan'ın kişisel web sitesi. İş analizi, teknoloji ve motosiklet tutkusu bir arada.",
+      "15 yıllık çağrı merkezi ve müşteri deneyimi liderliği tecrübemle, veri analitiği ve yapay zekâ çözümleriyle operasyonel verimlilik ve kârlılık sağlıyorum.",
+    images: ["/og"],
   },
 };
 
