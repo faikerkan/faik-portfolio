@@ -12,8 +12,8 @@ export default function Home() {
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Faik Erkan Gürşen",
-          jobTitle: "Çağrı Merkezi Yöneticisi",
-          url: (process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info"),
+          jobTitle: "Çağrı Merkezi & Müşteri Deneyimi Lideri",
+          url: process.env.NEXT_PUBLIC_SITE_URL || "https://faikerkan.info",
           sameAs: [
             "https://www.linkedin.com/in/faikerkan",
             "https://github.com/faikerkan",
@@ -28,16 +28,28 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-6xl font-semibold tracking-tight"
           >
-            Merhaba, ben Faik Erkan.
+            Çağrı Merkezi & Müşteri Deneyimi Lideri • Veri ve AI Uzmanı
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 text-lg md:text-xl text-zinc-300 max-w-2xl"
+            className="mt-6 text-lg md:text-xl text-zinc-300 max-w-3xl"
           >
-            Çağrı merkezi yönetimi, müşteri deneyimi ve CRM dönüşümüyle ölçülebilir
-            sonuçlar üretiyorum.
+            15 yıllık deneyimimle, operasyonlarınızı veriye ve yapay zekâya dayalı,
+            ölçülebilir ve kârlı hale getiriyorum.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mt-4 text-base md:text-lg text-zinc-300 max-w-3xl"
+          >
+            Turkcell, Arçelik, İzmir Doğalgaz ve Su Bilgi Teknolojileri gibi lider markalarla çalıştım.
+            CRM sistemleri, süreç iyileştirme, eğitim ve kalite yönetimi alanlarında uzmanım. 187 Acil ihbar
+            hatları, müşteri hizmetleri ve back office ekiplerinde operasyonel verimliliği %60’a kadar artıran
+            projelere imza attım.
           </motion.p>
 
           <motion.div
@@ -71,6 +83,28 @@ export default function Home() {
                 <p className="mt-2 text-zinc-300">{item.desc}</p>
               </div>
             ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="mt-8 flex flex-wrap gap-3"
+          >
+            <a
+              href="/iletisim"
+              className="inline-flex items-center justify-center rounded-lg bg-white text-black px-4 py-2 text-sm font-medium hover:bg-zinc-200"
+            >
+              İletişime Geç
+            </a>
+            <a
+              href="https://calendly.com/FAIK_PLACEHOLDER/30dk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg border border-white/20 text-white px-4 py-2 text-sm font-medium hover:bg-white/10"
+            >
+              30 Dakika Keşif Görüşmesi
+            </a>
           </motion.div>
         </div>
       </section>

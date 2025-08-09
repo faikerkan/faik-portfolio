@@ -22,6 +22,11 @@ export default function ContactPage() {
   } = useForm<ContactForm>({ resolver: zodResolver(contactSchema) });
 
   const onSubmit = async (data: ContactForm) => {
+    // Honeypot alanı: botları yakalamak için görünmez alan
+    const honeypot = (document.getElementById("website") as HTMLInputElement | null)?.value;
+    if (honeypot) {
+      return; // spam
+    }
     try {
       const FORM_URL =
         process.env.NEXT_PUBLIC_FORMSPREE_URL || "https://formspree.io/f/xqalglly";
@@ -52,6 +57,7 @@ export default function ContactPage() {
             <label className="text-sm text-zinc-300">Ad</label>
             <input
               {...register("name")}
+              required
               className="mt-2 w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:ring-2 focus:ring-white/20"
               placeholder="Adınız"
             />
@@ -63,6 +69,8 @@ export default function ContactPage() {
             <label className="text-sm text-zinc-300">E-posta</label>
             <input
               {...register("email")}
+              type="email"
+              required
               className="mt-2 w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:ring-2 focus:ring-white/20"
               placeholder="ornek@mail.com"
             />
@@ -75,6 +83,7 @@ export default function ContactPage() {
             <textarea
               {...register("message")}
               rows={5}
+              required
               className="mt-2 w-full rounded-lg bg-white/5 border border-white/10 px-4 py-2 outline-none focus:ring-2 focus:ring-white/20"
               placeholder="Mesajınızı yazın"
             />
@@ -83,6 +92,11 @@ export default function ContactPage() {
                 {errors.message.message}
               </p>
             )}
+          </div>
+          {/* Honeypot alanı - kullanıcıya görünmeyecek */}
+          <div className="hidden" aria-hidden>
+            <label htmlFor="website">Web Sitesi</label>
+            <input id="website" name="website" tabIndex={-1} autoComplete="off" />
           </div>
           <button
             type="submit"

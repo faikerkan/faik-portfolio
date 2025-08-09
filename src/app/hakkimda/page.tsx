@@ -15,25 +15,22 @@ export default function AboutPage() {
             Hakkımda
           </h1>
           <p className="mt-4 text-zinc-300">
-            Çağrı Merkezi yöneticisi olarak 15+ yıllık deneyimle; ekip liderliği, CRM
-            sistemleri ve müşteri deneyimi optimizasyonu odağında çalışıyorum. Veri
-            analitiği yüksek lisans derecemle, veriye dayalı stratejiler üretir;
-            operasyonel verimlilik, erişilebilirlik ve memnuniyet metriklerini
-            sürdürülebilir şekilde iyileştiririm.
+            Ben Faik Erkan Gürşen. Çağrı merkezi yönetimi, CRM sistemleri ve müşteri deneyimi optimizasyonu
+            alanında 15 yılı aşkın tecrübem var. 187 Acil İhbar Hattı, müşteri hizmetleri ve back office
+            süreçlerinde hem operasyonel hem de teknolojik dönüşümler yönettim. Yüksek lisans derecemi İş
+            Zekâsı ve Veri Analitiği alanında tamamladım ve makine öğrenmesi ile operasyon optimizasyonu
+            projeleri geliştirdim. Bugün, veri odaklı karar alma, yapay zekâ çözümleri ve süreç iyileştirme
+            yöntemleriyle işletmelerin kârlılığını ve müşteri memnuniyetini artırmayı hedefliyorum.
           </p>
         </header>
 
         <section className="space-y-4">
           <h2 className="text-xl font-medium">Uzmanlık Alanları</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-zinc-300">
-            <li>Ekip Liderliği ve Performans Yönetimi</li>
-            <li>Müşteri Deneyimi (CX) ve Erişilebilirlik</li>
-            <li>CRM Tasarımı ve Çağrı Akışı İyileştirme</li>
-            <li>Eğitim ve Kalite Yönetimi (KPI, denetim)</li>
-            <li>Süreç İyileştirme ve Operasyonel Verimlilik</li>
-            <li>Veri Analizi ve Raporlama</li>
-            <li>Yapay Zeka Destekli Çağrı/Metin Çözümleri</li>
-            <li>Paydaş Yönetimi ve Kurumsal İletişim</li>
+            <li>Çağrı Merkezi Yönetimi & CX</li>
+            <li>CRM Sistemleri & Süreç Tasarımı</li>
+            <li>Eğitim & Kalite Yönetimi</li>
+            <li>Veri Analitiği & Yapay Zekâ Uygulamaları</li>
           </ul>
         </section>
 

@@ -61,3 +61,25 @@ Kontrol:
 ```bash
 npm run check:redirects
 ```
+
+## Yeni rotalar ve içerik (2025-xx-xx)
+
+- OG Görsel: `/og` (1200x630)
+- Robots: `/robots.txt` (allow: `/`, sitemap: `${NEXT_PUBLIC_SITE_URL||https://faikerkan.info}/sitemap.xml`)
+- Sitemap: `/sitemap.xml` (anasayfa, `hakkimda`, `projeler`, `blog`, `iletisim` + dinamik yazılar ve projeler)
+- RSS: `/rss.xml` (son 20 blog yazısı)
+
+## İçerik güncellemesi
+
+- Ana sayfa Hero başlık ve açıklamalar güncellendi; CTA eklendi: “İletişime Geç”, “30 Dakika Keşif Görüşmesi” (`https://calendly.com/FAIK_PLACEHOLDER/30dk`).
+- `app/layout.tsx` içinde SEO metadata güncellendi ve varsayılan OG görsel `/og` olarak ayarlandı.
+
+## Build/Deploy Notu
+
+```bash
+npm ci
+npm run lint
+npm run build
+```
+
+Başarılı build sonrasında `main` dalına merge edildiğinde deploy otomatik tetiklenir.
